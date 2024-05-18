@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+    <PackageReference Include="Tesseract" Version="5.2.0" />
+    <PackageReference Include="Tesseract.Drawing" Version="5.2.0" />
+    <PackageReference Include="Tesseract.Net.SDK" Version="4.6.411" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\document.scanner.model\document.scanner.model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="tessdata\deu.traineddata">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\eumic\.nuget\packages\tesseract.net.sdk\4.6.411\build\..\content\tessdata\eng.traineddata" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\eumic\.nuget\packages\tesseract.net.sdk\4.6.411\build\..\content\tessdata\equ.traineddata" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\eumic\.nuget\packages\tesseract.net.sdk\4.6.411\build\..\content\tessdata\osd.traineddata" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\eumic\.nuget\packages\tesseract.net.sdk\4.6.411\build\..\content\tessdata\pdf.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\eumic\.nuget\packages\tesseract.net.sdk\4.6.411\build\..\content\tessdata\configs\config.cfg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\eumic\.nuget\packages\tesseract.net.sdk\4.6.411\build\..\content\tessdata\eng.traineddata" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\eumic\.nuget\packages\tesseract.net.sdk\4.6.411\build\..\content\tessdata\equ.traineddata" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\eumic\.nuget\packages\tesseract.net.sdk\4.6.411\build\..\content\tessdata\osd.traineddata" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\eumic\.nuget\packages\tesseract.net.sdk\4.6.411\build\..\content\tessdata\pdf.ttf" />
+  </ItemGroup>
+
+</Project>
