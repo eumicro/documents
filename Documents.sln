@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "document.scanner.api", "WebApplication1\document.scanner.api.csproj", "{E1366AD2-3950-47C6-A69D-8664AF4B5561}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "document.scanner.model", "document.scanner.model\document.scanner.model.csproj", "{24401F32-4101-467C-8363-B09E6ACCABE5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "document.scanner.services", "document.scanner.services\document.scanner.services.csproj", "{D67BACD4-1516-4DE9-8993-E929A91905EE}"
@@ -37,11 +35,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "document.repository.api.cli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "document.services.contracts", "document.services.contracts\document.services.contracts.csproj", "{A6DC8122-344C-43CC-89BD-75567B01D089}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "document.file.api.client", "document.file.api.client\document.file.api.client.csproj", "{B41AF8DF-E715-4E97-A209-24CC432D1D46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "document.file.api.client", "document.file.api.client\document.file.api.client.csproj", "{B41AF8DF-E715-4E97-A209-24CC432D1D46}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "document.file.repository.api.contracts", "document.file.repository.api.contracts\document.file.repository.api.contracts.csproj", "{DA29B220-BDB6-4CEB-851F-1D9376B9B9E5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "document.repository.api.contracts", "document.repository.api.contracts\document.repository.api.contracts.csproj", "{1E0D4AB6-161D-4F22-8112-6CF0022B0DAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "document.scanner.api", "document.scanner.api\document.scanner.api.csproj", "{25FC572B-9E77-44B9-BDA3-2AE86078E116}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,10 +49,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E1366AD2-3950-47C6-A69D-8664AF4B5561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E1366AD2-3950-47C6-A69D-8664AF4B5561}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E1366AD2-3950-47C6-A69D-8664AF4B5561}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E1366AD2-3950-47C6-A69D-8664AF4B5561}.Release|Any CPU.Build.0 = Release|Any CPU
 		{24401F32-4101-467C-8363-B09E6ACCABE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{24401F32-4101-467C-8363-B09E6ACCABE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24401F32-4101-467C-8363-B09E6ACCABE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -113,12 +109,15 @@ Global
 		{1E0D4AB6-161D-4F22-8112-6CF0022B0DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E0D4AB6-161D-4F22-8112-6CF0022B0DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E0D4AB6-161D-4F22-8112-6CF0022B0DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25FC572B-9E77-44B9-BDA3-2AE86078E116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25FC572B-9E77-44B9-BDA3-2AE86078E116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25FC572B-9E77-44B9-BDA3-2AE86078E116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25FC572B-9E77-44B9-BDA3-2AE86078E116}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E1366AD2-3950-47C6-A69D-8664AF4B5561} = {13E176F5-92ED-4870-B12E-4306D668826A}
 		{24401F32-4101-467C-8363-B09E6ACCABE5} = {D3CC4230-34FF-4A1E-B7DE-2A123E29AE36}
 		{D67BACD4-1516-4DE9-8993-E929A91905EE} = {D3CC4230-34FF-4A1E-B7DE-2A123E29AE36}
 		{5B646E0A-0C2E-4258-B7E5-6831F45651E1} = {13E176F5-92ED-4870-B12E-4306D668826A}
@@ -134,6 +133,7 @@ Global
 		{B41AF8DF-E715-4E97-A209-24CC432D1D46} = {4C47EBE3-9B9A-4DB3-8B88-93E8CF7F0839}
 		{DA29B220-BDB6-4CEB-851F-1D9376B9B9E5} = {4C47EBE3-9B9A-4DB3-8B88-93E8CF7F0839}
 		{1E0D4AB6-161D-4F22-8112-6CF0022B0DAF} = {4C47EBE3-9B9A-4DB3-8B88-93E8CF7F0839}
+		{25FC572B-9E77-44B9-BDA3-2AE86078E116} = {13E176F5-92ED-4870-B12E-4306D668826A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E248220-2B8A-4815-8060-1AD2BA6992DC}
