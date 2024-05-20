@@ -8,7 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\document.file.api.client\document.file.api.client.csproj" />
+    <ProjectReference Include="..\document.repository.api.client\document.repository.api.client.csproj" />
+    <ProjectReference Include="..\document.services\document.services.csproj" />
   </ItemGroup>
 
 </Project>
